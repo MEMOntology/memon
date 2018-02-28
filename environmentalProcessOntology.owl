@@ -1,0 +1,1349 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2017/10/environmentalProcessOntology/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2017/10/environmentalProcessOntology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:environmentalProcessOntology="http://www.semanticweb.org/lenovo/ontologies/2017/10/environmentalProcessOntology#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:ontologies="http://www.semanticweb.org/lenovo/ontologies/2017/10/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/environmentalProcessOntology">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/has_broad_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/has_broad_synonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/has_exact_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/has_exact_synonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#caused_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#caused_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>Vaporisation of an element or compound is process whereby that element or compound undergoes a phase transition from the liquid to vapor.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">vaporisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000622"/>
+        <obo:IAO_0000115>Boiling is a form of vaporisation which occurs when a liquid is heated to a temperature at which the vapor pressure of the liquid is equal to the pressure exerted on the liquid by the surrounding environmental pressure.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">boiling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000624">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>Hydrological condensation is a process in which atmospheric water vapour undergoes a phase transition from the gas phase to the liquid phase.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">hydrological condensation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000629">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <obo:IAO_0000115>The long-term fluctuations in temperature, precipitation, wind, and all other aspects of the Earth&apos;s climate. External processes, such as solar-irradiance variations, variations of the Earth&apos;s orbital parameters (eccentricity, precession, and inclination), lithosphere motions, and volcanic activity, are factors in climatic variation. Internal variations of the climate system, e.g., changes in the abundance of greenhouse gases, also may produce fluctuations of sufficient magnitude and variability to explain observed climate change through the feedback processes interrelating the components of the climate system.</obo:IAO_0000115>
+        <rdfs:comment>Definition vebatim from GEMET. Will need to be refined. Further, distinction between &quot;climate change&quot; and (one or many) &quot;climate change process&quot; will need to be discussed. Fluctuations are not processes, per se.</rdfs:comment>
+        <rdfs:label>climate change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000634">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001051"/>
+        <obo:IAO_0000115>A volcanic process is a process during which lava, tephra (ash, lapilli, volcanic bombs and blocks), and assorted gases are expelled from a volcanic vent or fissure.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">volcanic eruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000634"/>
+        <obo:IAO_0000115>An explosive eruption is a volcanic process in which pressurised magma is violently expelled and froths into volcanic ash. Explosive eruptions can eject a cloud of rocks, dust, gas, and pyroclastic material  which may then collapse, creating a pyroclastic flow of hot volcanic matter.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">explosive eruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000634"/>
+        <obo:IAO_0000115>An effusive eruption is a volcanic eruption during which lava flows onto the ground.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">effusive eruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>Mass wasting is the geomorphic process by which solid environmental material such as soil, sand, regolith, and/or rock move downslope typically as a mass, largely under the force of gravity, but frequently affected by water and water content as in submarine environments and mudslides.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <ontologies:has_broad_synonym>mass movement</ontologies:has_broad_synonym>
+        <ontologies:has_exact_synonym>slope movement</ontologies:has_exact_synonym>
+        <rdfs:comment>Of interest for future development: Some causes of mass wasting earthquakes, increased overburden from structures, increased soil moisture, reduction of roots holding the soil to bedrock, undercutting of the slope by excavation or erosion, weathering by frost heave, bioturbation, volcanic edifice over-steepening. Some processes that reduce mass wasting: Afforestation, Reforestation, Terracing steps on slopes (reduce angle of slope). https://en.wikipedia.org/wiki/Mass_wasting.</rdfs:comment>
+        <rdfs:label xml:lang="en">mass wasting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000696"/>
+        <obo:IAO_0000115>An avalanche is a rapid flow of snow down a sloping surface.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">avalanche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000692 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000692">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000690"/>
+        <obo:IAO_0000115>A landslide is a process whereby a large mass of earth and rocks moves down a hill or a mountainside.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <ontologies:has_exact_synonym>landslip</ontologies:has_exact_synonym>
+        <rdfs:label xml:lang="en">landslide process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000693 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000693">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000690"/>
+        <rdfs:label xml:lang="en">rockfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000696">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000690"/>
+        <obo:IAO_0000115>A mass wasting flow is a form of mass wasting during which the moving materials behave similarly to a flowing fluid. Water, air and ice are often involved in enabling fluidlike motion of the material.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <ontologies:has_broad_synonym>flow</ontologies:has_broad_synonym>
+        <rdfs:label xml:lang="en">mass wasting flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000697">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000696"/>
+        <obo:IAO_0000115>A mudflow is a form of mass wasting which involves very rapid to extremely rapid surging flow of debris that has become partially or fully liquified by the addition of significant amounts of water to clay-rich source material.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">mudflow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000702 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000702">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001049"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000634"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An ash fall process is a process in which volcanic ash formed during an explosive volcanic eruption, phreatomagmatic eruption, or during material transport in pyroclastic density currents is pulled towards the planetary surface by gravity.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ash fall process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>Hydrological precipitation is a process during which any product of the condensation of atmospheric water vapour is pulled to the planetary surface by gravity.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <ontologies:has_broad_synonym>precipitation</ontologies:has_broad_synonym>
+        <rdfs:label xml:lang="en">hydrological precipitation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>Hydrological evaporation is the evaporation of water, generally as part of a planetary water cycle.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>hydrological evaporation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000705">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050"/>
+        <obo:IAO_0000115>Soil degradation is a process which results in a change in soil health status resulting in a diminished capacity of the ecosystem in which the soil occurs to provide goods and services for its  beneficiaries.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.fao.org/soils-portal/soil-degradation-restoration/en</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">soil degradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000706">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500028"/>
+        <obo:IAO_0000115>Soil erosion is a process in which exogenic processes remove soil from one location on the Earth&apos;s crust and transport it to another location where it is deposited.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:comment>&quot;Soil Erosion is a common term that is often confused with soil degradation as a whole,  but in fact refers only to absolute soil losses in terms of topsoil and nutrients. This  is indeed the most visible effect of soil degradation, but does not cover all of its aspects. Soil erosion is a natural process in mountainous areas, but is often made much worse by poor management practices.&quot; http://www.fao.org/soils-portal/soil-degradation-restoration/en/</rdfs:comment>
+        <rdfs:label xml:lang="en">soil erosion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000707 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000707">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500002"/>
+        <rdfs:label>coastal flooding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500002"/>
+        <rdfs:label>riverine flooding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000709 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500002"/>
+        <rdfs:label>flash flooding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000716">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000707"/>
+        <rdfs:label>storm surge process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000717 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000717">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500002"/>
+        <rdfs:label>areal flooding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000718 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000718">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500002"/>
+        <rdfs:label>urban flooding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000719">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000720"/>
+        <obo:IAO_0000115>Snowmelt is a hydrological process in which water is produced by the melting of snow and becomes part of the hydrological surface runoff.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">snowmelt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000720">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:label>hydrological melting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000720"/>
+        <obo:IAO_0000115>Icemelt is a hydrological process in which water is produced by the melting of ice and becomes part of the hydrological surface runoff.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>icemelt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000743">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500005"/>
+        <obo:IAO_0000115>A process in which natural ecosystems present over an expanse of land are removed and replaced with anthropogenic ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">land consumption process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000792 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000792">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>A process whereby a large volume of gas moves due to a disequilibrium of physical forces.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">mass gaseous flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000793 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000793">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <obo:IAO_0000115>A mass gaseous flow which occurrs in a planet&apos;s atmosphere due to internal pressure disequilibria.</obo:IAO_0000115>
+        <rdfs:label>atmospheric wind</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000830 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000830">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001108"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001038"/>
+        <obo:IAO_0000115 xml:lang="en">A hydrological precipitation process in which atmospheric water vapour condenses to form droplets of liquid water massive enough to fall to a planetary surface due to the planet&apos;s gravity.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Rain</obo:IAO_0000119>
+        <ontologies:has_broad_synonym xml:lang="en">rainfall</ontologies:has_broad_synonym>
+        <rdfs:label xml:lang="en">water-based rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000839 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000839">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000043"/>
+        <rdfs:label xml:lang="en">combustion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000852 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000852">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050"/>
+        <obo:IAO_0000115>An environmental process in which coral expels the symbiotic algae living in its tissue as a result of stress, causing the coral to turn white.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">coral bleaching process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000870 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000870">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002"/>
+        <obo:IAO_0000115>A process in which a solid planetary surface is deformed.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ground deformation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000874 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000874">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001037"/>
+        <obo:IAO_0000115>Hailfall is a hydrological process in which balls or irregular lumps of water ice formed in thunderstorm or cumulonimbus clouds fall to a planetary surface.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">hailfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000877 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000877">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>atmospheric storm process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000895 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000895">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001037"/>
+        <obo:IAO_0000115 xml:lang="en">A hydrological process in which irregular aggregates of snow fall to a planetary surface.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">snowfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000896">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001036"/>
+        <obo:IAO_0000115>Rainfall which occurs when the temperature of a planetary surface and its surrounding atmosphere are below the freezing point of water, resulting in supercooled raindrops which freeze upon impact with solid surfaces.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">freezing rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000897 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000897">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>electrostatic discharge process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000898">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000897"/>
+        <obo:IAO_0000115>A sudden electrostatic discharge which occurs during an electrical storm as differentially charged atmospheric entities equalise their charge.</obo:IAO_0000115>
+        <rdfs:label>atmospheric lightning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000899 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000899">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000902"/>
+        <rdfs:label>intercloud lightning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000900 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000900">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000902"/>
+        <rdfs:label>intracloud lightning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000901 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000901">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000898"/>
+        <rdfs:label>lightning strike</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000902 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000902">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000898"/>
+        <rdfs:label>lightning flash</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000913 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000913">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>nucleation of cloud condensation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000915 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000915">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>A material decumulation process during which the mass of an existing ice mass decreases in size.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>ice loss process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000920 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>A sublimation process during which water ice transitions into a gaseous state.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">water ice sublimation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000043"/>
+        <obo:IAO_0000115>A material transformation process during which water ice is formed.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">water ice formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000981 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000981">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>A process whereby a volume of liquid moves due to a disequilibrium of physical forces.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">mass liquid flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000982 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000982">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000981"/>
+        <obo:IAO_0000115>A process during which a volume of water is transported due to a disequilibria in physical forces.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">water flow process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001023">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500003"/>
+        <rdfs:label>cloud formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001085">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>formation of particles in an atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001085"/>
+        <rdfs:label>formation of solid particles in an atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001085"/>
+        <rdfs:label>formation of liquid droplets in an atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001086"/>
+        <rdfs:label>formation of solid particles from gaseous material in an atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001087"/>
+        <rdfs:label>formation of liquid droplets from gaseous material in an atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>A process during which pieces of a planetary crust and uppermost mantle move.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">tectonic movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000692"/>
+        <obo:IAO_0000115>A rockslide is a process whereby a large mass of rock moves down a hill or a mountainside.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <ontologies:has_exact_synonym>rockslip</ontologies:has_exact_synonym>
+        <rdfs:label xml:lang="en">rockslide process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>A hydrological process that results in the drainage of water from peatlands</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Peat#Peat_drainage</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">peat drainage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label>environmental system process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:label>flooding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500003">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>atmospheric process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500004">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>greenhouse effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500005">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050"/>
+        <obo:IAO_0000115>A process which diminishes the functioning of an ecosystem located on land.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Land_degradation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">land degradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500015">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050"/>
+        <rdfs:label xml:lang="en">forest area expansion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>An action of exogenic processes (such as water flow or wind) which remove soil and rock from one location on the Earth&apos;s crust, then transport it to another location where it is deposited.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">erosion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <rdfs:label>hydrological process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000622"/>
+        <obo:IAO_0000115>Evaporation is a form of vaporisation which occurs when a portion of the surface layer of a liquid in contact with a gaseous material, which is not saturated with the evaporating substance, vaporises.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">evaporisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <rdfs:label>environmental monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500028"/>
+        <obo:IAO_0000115>An erosion process during which the movement of a glacier across a terrestrial surface causes the removal of material from that surface.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">glacial erosion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000008">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000"/>
+        <rdfs:label>compaction process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115>A process during which material is displaced from it&apos;s original location and transported either to a new location or back to the original location.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material transport process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>A material accumulation process during which the mass of an existing ice mass increases.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ice gain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000915"/>
+        <obo:IAO_0000115 xml:lang="en">A process during which the mass of ice constituting a glacier decreases.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">glacial ice loss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000011"/>
+        <obo:IAO_0000115>A process during which the mass of ice constituting a glacier increases.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">glacial ice gain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:label>brine channel formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115>A process during which a portion of some environmental material is converted into a different material or a collection of materials.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material transformation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000950"/>
+        <obo:IAO_0000115>A material transformation process during which seawater freezes into sea ice.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">sea ice formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000056"/>
+        <obo:IAO_0000115>A new ice formation process during which small, needle-like crystals consisting of nearly pure fresh water, form due to the freezing of open, turbulent, supercooled water.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">frazil ice formation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:label>desublimation of water vapour into ice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000950"/>
+        <obo:IAO_0000115>An ice formation process during which water is frozen into a form of new ice such as frazil, grease ice, slush, or shuga.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">new ice formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000044"/>
+        <obo:IAO_0000115 xml:lang="en">A sea ice formation process during which new ice crystals freeze together, forming nilas, a thin, elastic, continuous, ice sheet of a transparent gray color.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nilas formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000044"/>
+        <obo:IAO_0000115 xml:lang="en">A sea ice formation process during which water freezes to the bottom of an existing nilas ice floe creating a thicker ice floe known as young ice.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">young ice formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000044"/>
+        <obo:IAO_0000115 xml:lang="en">A sea ice formation process during which seawater freezes onto young ice during the cold season, forming first year ice.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">first year ice formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000044"/>
+        <obo:IAO_0000115 xml:lang="en">A sea ice formation process during which seawater freezes onto first year ice during the cold season, forming second year sea ice.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">second year ice formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000044"/>
+        <obo:IAO_0000115 xml:lang="en">A sea ice formation process during which seawater freezes into second year ice during the cold season, forming multiyear ice.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">multiyear ice formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000056"/>
+        <obo:IAO_0000115>A new ice formation process in which slush ice is formed.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">slush formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000056"/>
+        <obo:IAO_0000115>A new ice formation process in which shuga is formed.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">shuga formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>A process during which permafrost is warmed such that a portion of its constituent water ice is converted into meltwater.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Permafrost</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">permafrost thawing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000008"/>
+        <rdfs:label>solid-phase sintering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000101"/>
+        <rdfs:label>glacial sintering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>An avalanche during which a suspension of water and snow flows down a sloping surface.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">wet snow avalanche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_1000748 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_1000748">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002"/>
+        <obo:IAO_0000115>A process which results in the formation of an island.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">island formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">Naturally occurring climate processes are constantly occurring, most of which are driven by influx of of energy from the sun. The abundant supply of heat and light stimulate the Earth&apos;s atmosphere causing various climate processes to take place.</obo:IAO_0000115>
+        <ontologies:has_exact_synonym xml:lang="en">climate process</ontologies:has_exact_synonym>
+        <rdfs:label xml:lang="en">climatological process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">geological process that deals with the physics of the earth and its atmosphere, including oceanography, seismology, volcanology, and geomagnetism.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">geophysical process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001034 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:label xml:lang="fr">oceanographic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001035 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001035">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001034"/>
+        <rdfs:label xml:lang="fr">ocean movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001036 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000703"/>
+        <rdfs:label xml:lang="fr">freezing precipitation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001037 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000703"/>
+        <rdfs:label xml:lang="fr">frozen precipitation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001038 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000703"/>
+        <rdfs:label xml:lang="fr">liquid precipitation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001039 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001039">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001036"/>
+        <rdfs:label xml:lang="fr">freezing drizzle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001040 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000830"/>
+        <rdfs:label xml:lang="fr">acid rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001042 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000830"/>
+        <rdfs:label xml:lang="fr">heavy rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001043 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001043">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001042"/>
+        <rdfs:label xml:lang="fr">cloud brust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001045 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000830"/>
+        <rdfs:label xml:lang="fr">light rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001046 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000830"/>
+        <rdfs:label xml:lang="fr">moderate rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001047 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000830"/>
+        <rdfs:label xml:lang="fr">very heavy rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001048 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001048">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001038"/>
+        <rdfs:label xml:lang="fr">rainband</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001049 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001049">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002"/>
+        <rdfs:label xml:lang="en">geophysical precipitation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <obo:IAO_0000115 xml:lang="en">a natural process whereby geographic features are modified</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">geographical process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001051 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001051">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002"/>
+        <rdfs:label xml:lang="fr">volcanic activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001052 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000634"/>
+        <rdfs:label xml:lang="fr">undersea volcanic eruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001053 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001053">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001051"/>
+        <rdfs:label xml:lang="fr">magma activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001081 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001081">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#caused_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ontologies:has_exact_synonym xml:lang="en">earth shaking</ontologies:has_exact_synonym>
+        <rdfs:label xml:lang="fr">earth trembling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001082 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001082">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002"/>
+        <rdfs:label xml:lang="fr">seisme wave</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001083 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000839"/>
+        <rdfs:label xml:lang="fr">burning process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001084 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001084">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001083"/>
+        <rdfs:label xml:lang="fr">tree burning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001088 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001088">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050"/>
+        <rdfs:label xml:lang="fr">tree cutting down</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001092 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:label xml:lang="fr">water level rise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001093 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <rdfs:label xml:lang="fr">water level fall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001108 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001108">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001109"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001038"/>
+        <rdfs:label xml:lang="fr">rain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001109 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001109">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001038"/>
+        <rdfs:label xml:lang="fr">rainfall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001116 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500031"/>
+        <obo:IAO_0000115>Runoff is a portion of precipitation that did not get (infiltrated) absorbed into the soil, or did not evaporate, and therefore, made its way from the ground surface into places that water collect. Runoff causes erosion, and also carry chemicals and substances on the ground surface along to the rivers where the water ends up.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">water runoff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001117 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001117">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001116"/>
+        <rdfs:label xml:lang="en">heavy runoff</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
