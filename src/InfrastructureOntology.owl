@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2017/11/Infrastructure/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2017/11/Infrastructure/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/11/Infrastructure">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Bridge -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Bridge">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Canal -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Canal">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Dam -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Dam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001004"/>
+        <obo:IAO_0000115>A Facility that is designed to impound water or underground streams.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Infrastructure -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Railway -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Railway">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#RailwayCrossing -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#RailwayCrossing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#RailwayJunction -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#RailwayJunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Trail -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Trail">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Infrastructure"/>
+        <rdfs:label>Transportation Infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Tunnel -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Tunnel">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#TransportationInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001004">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Infrastructure"/>
+        <rdfs:label xml:lang="fr">hydraulic infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001096 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Dam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">dam failure</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

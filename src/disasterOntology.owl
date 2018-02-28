@@ -1,0 +1,553 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2017/10/disasterOntology/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2017/10/disasterOntology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/disasterOntology">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000247">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001018"/>
+        <obo:IAO_0000115>An opening, or rupture, in the Earth&apos;s surface or crust, which allows hot, molten rock, ash and gases to escape from deep below the surface.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO ontology</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">volcano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000677">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001018"/>
+        <obo:IAO_0000115>An earthquake is the disposition of the surface of a planet to shake due to the passage of seismic waves through rocks. Seismic waves are produced when some form of energy stored in a planet&apos;s crust is suddenly released. Elastic strain, gravity, chemical reactions, or even the motion of massive bodies can produce earthquakes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">earthquake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000678">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000677"/>
+        <obo:IAO_0000115>A tectonic earthquake is an earthquake caused by the release of elastic strain. A tectonic earthquake occurs when strains in rock masses have accumulated to a point where the resulting stresses exceed the strength of the rocks, and sudden fracturing results.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.britannica.com/science/earthquake-geology</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">tectonic earthquake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000678"/>
+        <obo:IAO_0000115>A megathrust earthquake is a tectonic earthquake which occurs at subduction zones at destructive plate boundaries (convergent boundaries). These interplate earthquakes are the planet&apos;s most powerful, with moment magnitudes that can exceed 9.0.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.britannica.com/science/earthquake-geology</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">megathrust earthquake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000689 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000677"/>
+        <obo:IAO_0000115>a very high, large wave in the ocean that is usually caused by an earthquake under the sea and that can cause great destruction when it reaches land</obo:IAO_0000115>
+        <rdfs:comment>A tsunami is the disposition of  an ocean or large lake during which a series of waves is generated in a water body, by the displacement of a large volume of water. Earthquakes, volcanic eruptions and other underwater explosions (including detonations of underwater nuclear devices), landslides, glacier calvings, meteorite impacts and other disturbances above or below water all have the potential to generate a tsunami.</rdfs:comment>
+        <rdfs:label xml:lang="en">tsunami</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000710 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000710">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001019"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">inundation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>An unusual accumulation of water above the ground caused by high tide, heavy rain, melting snow or rapid runoff from paved areas.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.eionet.europa.eu/gemet/en/concept/3298</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">flood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000711 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
+        <obo:IAO_0000115>A coastal flood is a flood which is formed as a result of large amounts of water from marine water bodies or large lakes being transported to usually dry land by displacement processes such as high winds or seismic activity.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Flood#Estuarine_and_coastal</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">coastal flood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000712 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000712">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
+        <obo:IAO_0000115>A riverine flood is a flood which is formed as a result of a river&apos;s flow rate exceeding the capacity of its channel.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">riverine flood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000713 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000713">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
+        <obo:IAO_0000115>A flash flood is a flood formed by the rapid flooding of geomorphic low-lying areas. It may be caused by heavy rain associated with a severe thunderstorm, hurricane, tropical storm, or meltwater from ice or snow flowing over ice sheets or snowfields. Flash floods may also occur after the collapse of a natural ice or debris dam, or a human structure such as a man-made dam. Flash floods are distinguished from a regular flood by a timescale of less than six hours.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Flash_flood</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">flash flood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000714 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000714">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000711"/>
+        <obo:IAO_0000115>A storm surge is a coastal flood which is caused by low-pressure weather systems such as tropical cyclones and strong extratropical cyclones, the severity of which is affected by the shallowness and orientation of the water body relative to storm path, and the timing of tides.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Storm_surge</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">storm surge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000715 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000689"/>
+        <obo:IAO_0000115>A meteotsunami is a tsunami caused by atmospheric processes and differences in air pressure.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Meteotsunami</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">metotsunami</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000786 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000786">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001017"/>
+        <obo:IAO_0000115>is the disposition of an uncontrolled burning fire, usually in wild lands, which can cause damage to forestry, agriculture, infrastructure and buildings.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.ifrc.org/en/what-we-do/disaster-management/about-disasters/definition-of-hazard/wildfires/</obo:IAO_0000119>
+        <rdfs:label>fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000787 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000787">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000788"/>
+        <obo:IAO_0000115>A conflagration which is uncontrolled and combusts material in a vegetated area, be it rural or wild.</obo:IAO_0000115>
+        <rdfs:label>wildfire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000788 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000788">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000786"/>
+        <obo:IAO_0000115>A fire which occurs in a large spatial area poses a risk to human life, animal life, health, and/or property.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Conflagration</obo:IAO_0000119>
+        <rdfs:label>conflagration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000791 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000791">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000787"/>
+        <obo:IAO_0000115>A wildfire which occurs in a forest, primarily consuming vegetation as fuel.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">forest fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000876 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000876">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001020"/>
+        <obo:IAO_0000115 xml:lang="en">A storm is any disturbed state of an environment or in an astronomical body&apos;s atmosphere especially affecting its surface, and strongly implying severe weather.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">storm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000878 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000878">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027"/>
+        <obo:IAO_0000115>An atmospheric storm which occurs in cumulonimbus clouds and during which lightning and thunder occur.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Thunderstorms may or may not involve processes which result in strong winds, heavy rain, snow, sleet, hail, or other forms of precipitation.</rdfs:comment>
+        <rdfs:label xml:lang="en">thunderstorm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000879">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027"/>
+        <obo:IAO_0000115>An atmospheric storm during which intense rainfall occurs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">rainstorm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000880 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000880">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000882"/>
+        <obo:IAO_0000115 xml:lang="en">An atmospheric storm which intense hailfall occurs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hailstorm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000881 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000881">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027"/>
+        <obo:IAO_0000115>An atmospheric storm during which intense snowfall occurs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">snowstorm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000882 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000882">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027"/>
+        <obo:IAO_0000115>An atmospheric storm during which freezing rain falls and accumulates as ice on exposed surfaces.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Ice_storm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">icestorm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000903 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000903">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000881"/>
+        <obo:IAO_0000115>A blizzard is a severe snowstorm during which snowfall is transported by strong winds, sustained for several hours.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Blizzard</obo:IAO_0000119>
+        <rdfs:comment>To qualify a snowstorm as a blizzard, some sources require the windspeed to be at least 56 km/h and the duration of the storm to be at least three hours. We set no such hard boundaries in this definition, as this should be done with reference to local standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">blizzard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000904 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000904">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027"/>
+        <obo:IAO_0000115>A ground blizzard is a storm during which snow which has settled on a planetary surface is resuspended in and transported through its atmosphere by strong winds, sustained for several hours.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Blizzard</obo:IAO_0000119>
+        <rdfs:comment>This form of blizzard does not involve snowfall as the snow which is blown by the winds is already present on the ground. To qualify a snowstorm as a blizzard, some sources require the windspeed to be at least 56 km/h and the duration of the storm to be at least three hours. We set no such hard boundaries in this definition, as this should be done with reference to local standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">ground bilzzard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500001">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001018"/>
+        <obo:IAO_0000115>a type of land degradation in which a relatively dry land region becomes increasingly arid, typically losing its bodies of water as well as vegetation and wildlife.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Desertification</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">desertification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500012">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014"/>
+        <obo:IAO_0000115>The removal of forest and undergrowth to, for example, increase the surface of arable land or to use the timber for construction or industrial purposes.</obo:IAO_0000115>
+        <rdfs:label>deforestation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_1000745 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_1000745">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001017"/>
+        <obo:IAO_0000115>Drought is defined as a deficiency of rainfall over an extended period – a season, a year or several years – relative to the statistical multi-year average for the region.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.ifrc.org/en/what-we-do/disaster-management/about-disasters/definition-of-hazard/drought/</obo:IAO_0000119>
+        <rdfs:comment>durable year season with lack of precipitation under high air temperature.</rdfs:comment>
+        <rdfs:label>drought</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>a sudden calamitous event bringing great damage, loss, or destruction.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.merriam-webster.com</obo:IAO_0000119>
+        <rdfs:label xml:lang="fr">disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015"/>
+        <oboInOwl:hasExactSynonym>human made disaster</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A disastrous event caused directly and principally by one or more identifiable deliberate or negligent human actions. Also called human-made disaster. Compare with natural disaster.
+
+ http://www.businessdictionary.com/</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">man made disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013"/>
+        <obo:IAO_0000112>The earthquake was one of the worst natural disasters of this century.</obo:IAO_0000112>
+        <obo:IAO_0000115>a sudden and terrible event in nature (such as a hurricane, tornado, or flood) that usually results in serious damage and many deaths.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.merriam-webster.com/</obo:IAO_0000119>
+        <rdfs:label xml:lang="fr">natural disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001016 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001016">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014"/>
+        <obo:IAO_0000115 xml:lang="en">Fire is the disposition of an uncontrolled burning fire .Man-made fires are created or caused by people, rather than occurring naturally</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">man made fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001017 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001017">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015"/>
+        <obo:IAO_0000115>A hazard caused by long-lived, meso- to macro-scale atmospheric processes ranging from intra-seasonal to multi-decadal climate variability.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.emdat.be/</obo:IAO_0000119>
+        <rdfs:label xml:lang="fr">climatological disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001018 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001018">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015"/>
+        <obo:IAO_0000115 xml:lang="en">A hazard originating from solid earth. This term is used interchangeably with the term geological hazard.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">www.emdat.be/</obo:IAO_0000119>
+        <rdfs:label xml:lang="fr">geophysical disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001019 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001019">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015"/>
+        <obo:IAO_0000115 xml:lang="en">Hydrological disasters is a violent, sharp and harmful amendment either in quality of earth&apos;s water or in distribution or movement of water ashore below the surface or in atmosphere.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">hydrological disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001020 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001020">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015"/>
+        <obo:IAO_0000115 xml:lang="en">A hazard caused by short-lived, micro- to meso-scale extreme weather and atmospheric conditions that last from minutes to days.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">http://www.emdat.be/</obo:IAO_0000119>
+        <rdfs:label xml:lang="fr">meteorological disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001021 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000677"/>
+        <obo:IAO_0000115 xml:lang="en">a submarine earthquake</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">seaquake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001022 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
+        <obo:IAO_0000115 xml:lang="en">any high water flow, overflow, or inundation in a defined area such as a group of counties or an area along a river or stream which threaten lives and property that is not covered by an river flood, or flash flood. The main difference between flash floods and areal floods is that areal flooding applies to longer duration precipitation, (greater than six hours), causing slow rises on rivers and streams.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">areal flood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001023 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
+        <obo:IAO_0000115 xml:lang="en">Urban flood is specific in the fact that the cause is a lack of drainage in an urban area.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">urban flood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001024 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001024">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001020"/>
+        <obo:IAO_0000115 xml:lang="en">Extreme temperature can be a heat or a cold wave.
+A heat wave is a prolonged period of excessively hot and sometimes also humid weather relative to normal climat patterns of a certain region. 
+A cold wave can be both a prolonged period of excessively cold weather and the sudden invasion of very cold air over a large area.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">extreme temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001025 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001025">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001020"/>
+        <obo:IAO_0000115 xml:lang="en">a storm or system of winds that rotates about a center of low atmospheric pressure, advances at a speed of 20 to 30 miles (about 30 to 50 kilometers) an hour, and often brings heavy rain</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">cyclone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001026 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001026">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001025"/>
+        <obo:IAO_0000115 xml:lang="en">Hurricanes are giant, spiraling tropical storms that can pack wind speeds of over 160 miles (257 kilometers) an hour and unleash more than 2.4 trillion gallons (9 trillion liters) of rain a day. These same tropical storms are known as cyclones in the northern Indian Ocean and Bay of Bengal, and as typhoons in the western Pacific Ocean.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hurricane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <rdfs:label xml:lang="fr">convective storm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001028 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <rdfs:label xml:lang="fr">tropical storm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001029 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <rdfs:label xml:lang="fr">extra-tropical storm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001030 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001030">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001027"/>
+        <obo:IAO_0000115 xml:lang="en">Tornadoes are rotating columns of air (vortex) that emerge out of the base of a cumulonimbus cloud and have contact to the Earth&apos;s surface.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Typically a tornado forms during a severe convective storm in so-called supercells and is often visible as a funnel-shaped cloud. Tornadoes are usually short-lived, lasting on average no more than 10 minutes. They can generate wind speeds above 400 km/h and are considered the most destructive weather phenomenon. The intensity of tornadoes is assessed using the Enhanced Fujita Scale. Other names for this weather phenomenon are twister, waterspout</rdfs:comment>
+        <rdfs:label xml:lang="fr">tornado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001031 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001031">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001030"/>
+        <obo:IAO_0000115 xml:lang="en">A tornado. 2. Colloquial expression describing tornadoes occurring with a parent cloud in its growth stage and with its vorticity originating in the boundary layer.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">landspout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001032 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001032">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001030"/>
+        <obo:IAO_0000115 xml:lang="en">A tornado that occurs with a parent cloud in its growth stage and with its vorticity originating in the boundary layer. The parent cloud does not contain a preexisting midlevel mesocyclone. Landspouts and gustnadoes are examples of the nonsupercell tornado.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">non supercell tornado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001033 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001033">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001030"/>
+        <obo:IAO_0000115 xml:lang="en">1. In general, any tornado over a body of water. 2. In its most common form, a nonsupercell tornado over water.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">http://oceanservice.noaa.gov/facts/waterspout.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="fr">water spout</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
