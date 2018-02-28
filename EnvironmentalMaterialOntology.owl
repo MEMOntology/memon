@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2017/11/EnvironmentalMaterial/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2017/11/EnvironmentalMaterial/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/11/EnvironmentalMaterial">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <oboInOwl:hasRelatedSynonym>haar</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/has_exact_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/has_exact_synonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
+        <rdfs:label>inheres in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001901/bearer_of"/>
+        <rdfs:label>has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002314">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
+        <rdfs:label>inheres in part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>depends on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001901/bearer_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001901/bearer_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00001995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>rock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00001998">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <obo:IAO_0000115>Soil is an environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, gases, liquids, and a broad range of resident micro- and macroorganisms.</obo:IAO_0000115>
+        <rdfs:comment>&apos;In engineering terms, soil is referred to as regolith, or loose rock material that lies above the &apos;solid geology&apos;. Soil is commonly referred to as &quot;earth&quot; or &quot;dirt&quot;; technically, the term &quot;dirt&quot; should be restricted to displaced soil.&apos; https://en.wikipedia.org/wiki/Soil
+
+&quot; The upper limit of soil is the boundary between soil and air, shallow water, live plants, or plant materials that have not begun to decompose. Areas are not considered to have soil if the surface is permanently covered by water too deep (typically more than 2.5 meters) for the growth of rooted plants.
+
+The lower boundary that separates soil from the nonsoil underneath is most difficult to define. Soil consists of horizons near the Earth&apos;s surface that, in contrast to the underlying parent material, have been altered by the interactions of climate, relief, and living organisms over time. Commonly, soil grades at its lower boundary to hard rock or to earthy materials virtually devoid of animals, roots, or other marks of biological activity. For purposes of classification, the lower boundary of soil is arbitrarily set at 200 cm.&quot;  Soil taxonomy, 2nd Ed., quoted in http://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280</rdfs:comment>
+        <rdfs:label>soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000797"/>
+        <obo:IAO_0000115>The mixture of gases (roughly (by molar content/volume: 78% nitrogen, 20.95% oxygen, 0.93% argon, 0.038% carbon dioxide, trace amounts of other gases, and a variable amount (average around 1%) of water vapor) that surrounds the planet Earth.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>air</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000815"/>
+        <rdfs:label>water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
+        <rdfs:label>saline water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001995"/>
+        <rdfs:label xml:lang="en">volcanic rock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
+        <rdfs:label>surface water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00002234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
+        <rdfs:label>acrisol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00005792 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00005792">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
+        <rdfs:label>underground water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A portion of environmental material is a fiat object which forms the medium or part of the medium of an environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:comment>Everything under this parent must be a mass noun. All subclasses are to be understood as being composed primarily of the named entity, rather than restricted to that entity. For example, &quot;ENVO:water&quot; is to be understood as &quot;environmental material composed primarly of some CHEBI:water&quot;. This class is currently being aligned to the Basic Formal Ontology. Following this alignment, its definition and the definitions of its subclasses will be revised.</rdfs:comment>
+        <rdfs:label>environmental material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>lava</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000797"/>
+        <obo:IAO_0000115>Water vapour is a vapour which is the gas phase of water.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>water vapour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>water ice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>snow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>glass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000797"/>
+        <obo:IAO_0000115>Atmospheric ozone is an environmental material primarily composed of ozone in its gaseous form and present in the atmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>atmospheric ozone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000599 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000599">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
+        <rdfs:label>river water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000648 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>magma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>volcanic ash</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000789 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000789">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000797"/>
+        <obo:IAO_0000115>A portion of gas which is emitted by a fire or other exothermic reaction, is of increased temperature, and typically emits light in the visible range.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>flame</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000797 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000797">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001547"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <obo:IAO_0000115>A material entity which is composed of one or more chemical entities and has neither independent shape nor volume but tends to expand indefinitely.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>gaseous environmental material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000814 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000814">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001546"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:label>solid environmental material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000815 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000815">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001548"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:label>liquid environmental material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000838 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000838">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:label>smoke</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000842 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000842">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <rdfs:label>smog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000844 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000844">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <obo:IAO_0000115>A visible mass of cloud water droplets or ice crystals suspended in the air at or near a planetary surface.</obo:IAO_0000115>
+        <rdfs:comment>This class refers only to fog formed by materials primarily composed of water. &quot;Fog can be considered a type of low-lying cloud and is heavily influenced by nearby bodies of water, topography, and wind conditions. In turn, fog has affected many human activities, such as shipping, travel, and warfare.&quot; https://en.wikipedia.org/wiki/Fog</rdfs:comment>
+        <rdfs:label>fog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <rdfs:label>ice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000797"/>
+        <obo:IAO_0000115>A gas, smoke, or vapor that smells strongly or is dangerous to inhale.</obo:IAO_0000115>
+        <rdfs:label>fume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_09200004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_09200004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000973"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_09200009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The porosity of some soil.</obo:IAO_0000115>
+        <rdfs:label>perosity of soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_09200008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_09200008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_09200009"/>
+        <rdfs:label>composition of soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_09200009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_09200009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000141"/>
+        <rdfs:label>structure of soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_09200015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_09200015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0015009"/>
+        <obo:IAO_0000115>The humidity of some soil.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <bibo:has_exact_synonym>soil humidity</bibo:has_exact_synonym>
+        <rdfs:label>humidity of soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000141"/>
+        <obo:IAO_0000115>A single physical entity inhering in an bearer by virtue of the bearer&apos;s quantities or relative ratios of subparts.</obo:IAO_0000115>
+        <rdfs:label>composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001546"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s resistance to pressure, being broken, or pierced</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>hardness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</obo:IAO_0000115>
+        <rdfs:label>morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <obo:IAO_0000115>A morphology quality inhering in a bearer by virtue of the bearer&apos;s relative position, shape, arrangements and connectivity of an organism&apos;s various parts; the pattern underlying its form.</obo:IAO_0000115>
+        <rdfs:label>structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000048"/>
+        <obo:IAO_0000115>A hardness quality of being rigid and resistant to pressure.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>hard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000970 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000141"/>
+        <obo:IAO_0000115>A structural quality inhering in a bearer by virtue of the bearer&apos;s disposition to being permeated or pervaded by a gas or liquid (as by osmosis or diffusion).</obo:IAO_0000115>
+        <rdfs:label>permeability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000973 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000973">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000970"/>
+        <obo:IAO_0000115>A permeability quality inhering in a bearer by virtue of the bearer&apos;s disposition to admit the passage of gas or liquid through pores or interstices.</obo:IAO_0000115>
+        <rdfs:label>perosity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000984 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000984">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:label xml:lang="en">porous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000985 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000985">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:label>non-porous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001546"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s disposition to being turned, bowed, or twisted without breaking.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>flexibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001543"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s ability of being turned, bowed, or twisted without breaking.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <bibo:has_exact_synonym>bendy</bibo:has_exact_synonym>
+        <rdfs:label>flexible</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001543"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s inability of being turned, bowed, or twisted without breaking.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <bibo:has_exact_synonym>stiff</bibo:has_exact_synonym>
+        <rdfs:label>inflexible</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002198"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s exhibiting the physical characteristics of an entity characterized by particles arranged such that their shape and volume are relatively stable.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>quality of a solid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002198"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s exhibiting the physical characteristics of an entity consisting of particles that have neither a defined volume nor defined shape.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <bibo:has_exact_synonym>gaseous</bibo:has_exact_synonym>
+        <rdfs:label>quality of a gas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002198"/>
+        <obo:IAO_0000115>A physical quality inhering in an entity exhibiting the physical characteristics of an amorphous (non-crystalline) form of matter between a gas and a solid that has a definite volume, but no definite shape.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>quality of a liquid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A quality inhering in a bearer by virtue of its constitution.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>quality of a substance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0015009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0015009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001547"/>
+        <obo:IAO_0000115>A quality inhering in air by virtue of the partial pressure exerted by the bearer&apos;s water vapour content.</obo:IAO_0000115>
+        <obo:IAO_0000119>ENVO</obo:IAO_0000119>
+        <rdfs:label>humidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0015010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0015010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0015009"/>
+        <rdfs:label>increased humidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0015011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0015011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0015009"/>
+        <rdfs:label>decreased humidity</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

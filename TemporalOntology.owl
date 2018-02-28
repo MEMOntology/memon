@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2017/11/temporalOntology/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2017/11/temporalOntology/"
+     xmlns:ExtendedRelationOntology="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/11/temporalOntology">
+        <owl:imports rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001105 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001105">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#interval_contains"/>
+        <rdfs:label xml:lang="fr">has day</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001106 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001106">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#interval_contains"/>
+        <rdfs:label xml:lang="fr">has month</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001107 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001107">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#interval_contains"/>
+        <rdfs:label xml:lang="fr">has year</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001105"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Day"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001106"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Month"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001107"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Year"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001105"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Day"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001106"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Month"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001107"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Year"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001006 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:label xml:lang="fr">season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001007 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001007">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001006"/>
+        <rdfs:label xml:lang="fr">cold season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001008 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001008">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001006"/>
+        <rdfs:label xml:lang="fr">warm season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001098 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001098">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Day"/>
+                    <rdf:Description rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Hour"/>
+                    <rdf:Description rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Minute"/>
+                    <rdf:Description rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Month"/>
+                    <rdf:Description rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Second"/>
+                    <rdf:Description rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology#Year"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001005"/>
+        <rdfs:label xml:lang="fr">timestamp</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

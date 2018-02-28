@@ -1,0 +1,1493 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#"
+     xml:base="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology"
+     xmlns:ero="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology">
+        <owl:imports rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology"/>
+        <owl:imports rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.90</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">October 24, 2016</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COPYRIGHT © 2015 CUBRC, Inc.</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/Color -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/Color">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OpticalProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Optical Property that inheres in a bearer in virtue of that bearer&apos;s Color Hue, Color Saturation and Color Brightness.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessAggregate -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Aggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Albedo -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Albedo">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationReflectivity"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radiation Reflectivity that inheres in a bearer in virtue of the capacity of its surface to reflect incident electromagnetic radiation of a particular wavelength.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Albedo</ero:definition_source>
+        <ero:elucidation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albedo is a reflection coefficient and is measured as the ratio of radiation reflected from the surface to the incident radiation. Albedo is dimensionless, can be expressed as a percentage, and is measured on a scale from 0 for no reflection to 1 for perfect reflection of a surface. Albedo depends on the wavelength of the radiation; when no wavelength is specified, it typically refers to some appropriate average across the spectrum of visible light.</ero:elucidation>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albedo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Altitude -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Altitude">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Height"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Height that inheres in a Site that externally connects an Independent Continuant to either the surface of the Earth or the Earth&apos;s mean Sea Level.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Altitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Amount -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Amount">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the total, aggregate or sum of a number of discrete items or material the entity contains as parts.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wiktionary.org/wiki/amount</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Bent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Bent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angular</ero:alternative_label>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kinked</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having one or more angles along its border.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Black -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Black">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that lacks any hues as parts.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Blond -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Blond">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that ranges from nearly white to a light greyish yellow</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blond</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Blue -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Blue">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is between Cyan and Violet with a wavelength in the visible spectrum typically between 450 to 490 nanometers.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Blunt -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Blunt">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer not having a sharp edge or point.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blunt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Branched -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Branched">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having subdivisions or offshoots.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Branched</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Brown -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Brown">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that consists of dark orange and red, and of very low intensity.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Circumference -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Circumference">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Perimeter"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Perimeter that inheres in a circle or ellipse.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circumference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Closure -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Closure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the degree to which that bearer affords passage or sightline through it via an opening, aperture, orifice, or vent.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Coiled -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Coiled">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer being wound in concentric rings or spirals.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coiled</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ColorBrightness -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ColorBrightness">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OpticalProperty"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color Intensity</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Optical Property that inheres in a bearer in virtue of its capacity to reflect or radiate light.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color Brightness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ColorHue -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ColorHue">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OpticalProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Optical Property that inheres in a bearer in virtue of its capacity to reflect a dominant wavelength of the visible light spectrum, which is typically divided up into 6 to 8 ranges.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color Hue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ColorSaturation -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ColorSaturation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OpticalProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Optical Property that inheres in a bearer in virtue of its capacity to reflect high intensity light distributed across fewer wavelengths, typically considered on a continuum of purity.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color Saturation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ConcaveShape -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ConcaveShape">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality that inheres in a bearer in virtue of the bearer having one or more cavities, such that at least one line connecting a pair of points on the surface of the bearer will lie outside.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concave Shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ConeShape -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ConeShape">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalShape"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Three Dimensional Shape that inheres in a bearer in virtue of it having a flat base with sides that taper smoothly to an apex.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cone</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cone Shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ConvexShape -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ConvexShape">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality that inheres in a bearer in virtue of the bearer not having a cavity, such that no line connecting a pair of points on the surface of the bearer will lie outside.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convex Shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#CubeShape -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#CubeShape">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Cubiod"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Cubiod shape inhering in a bearer in virtue of it having six square faces.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cube Shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Cubiod -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Cubiod">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalShape"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Three Dimensional Shape that inheres in a bearer in virtue of it having six rectangular faces.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cubiod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Curved -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Curved">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having borders which are smoothly rounded.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curved</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Cyan -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Cyan">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is between Green and Blue with a wavelength in the visible spectrum typically between 490 and 520 nanometers.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cyan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Cylindrical -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Cylindrical">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalShape"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Columnar</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Three Dimensional Shape inhering in a bearer in virtue of the bearer having an elongated shape with round bases.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cylindrical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Density -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Density">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:alternative_label>Density</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of that bearer&apos;s mass per unit volume.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass Density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Depth -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Depth">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A One Dimensional Extent that inheres in a bearer in virtue of the bearer&apos;s extension in a downward, backward, or inward direction.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Diameter -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Diameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A One Dimensional Extent that inheres in a circle in virtue of the extent of a straight line that passes through the center of the circle and starts and ends on the circle&apos;s boundary.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Drooping -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Drooping">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having a border that hangs downwards.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drooping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Frequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Frequency that is characterized by the rate of oscillations per second of an electromagnetic wave.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Electromagnetic_spectrum</ero:definition_source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Divisions between EM radiation frequencies are fiat and sources vary on where to draw boundaries.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetic Radiation Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationProperty -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Realizable Entity that inheres in an bearer in virtue of how that bearer interacts with electromagnetic radiation.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetic Radiation Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ExtremeUltravioletLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ExtremeUltravioletLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltravioletLightFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Ultraviolet Light Frequency of some Electromagnetic Wave, typically between 3 and 30 petahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ultraviolet</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Ultraviolet Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ExtremelyHighFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ExtremelyHighFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MicrowaveFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 30 and 300 gigahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extremely High Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ExtremelyLowFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ExtremelyLowFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 3 and 30 hertz.</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extremely Low Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#FarInfraredLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#FarInfraredLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#InfraredLightFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Infrared Light Freqeuncy of some Electromagnetic Wave, typically between 300 gigahertz and 20 terahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Electromagnetic_spectrum#Infrared_radiation</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Far Infrared Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Flat -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Flat">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having a horizontal border without a significant deviation.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Fluorescence -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Fluorescence">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#LuminescentProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Luminescent Property that inheres in a bearer in virtue of that bearer&apos;s capacity to emit visible light while absorbing shorter wavelength radiation, but not after.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Fluorescence</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Folded -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Folded">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of one part of the bearer being layered over another connected part.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Folded</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Frequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Frequency">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process Profile that is characterized by the number of repetitive processes during a particular time period.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Frequency</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#FundamentalFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#FundamentalFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Sound Frequency that is charaterized as the lowest frequency of a sound wave.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamental Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#GammaRayFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#GammaRayFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Freqeuncy of some Electromagnetic Wave, typically above 30 exahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gamma_ray</ero:definition_source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Currently gamma radiation is distinguished from x-rays by their source--either inside or outside of the nucleus--rather than by frequency, energy, and wavelength.
+https://en.wikipedia.org/wiki/Gamma_ray#Naming_conventions_and_overlap_in_terminology</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma Ray Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#GoldColor -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#GoldColor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that resembles a yellow-orange Hue with the added feature of having a metallic shine.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gold Color</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Green -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Green">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is between Yellow and Cyan with a wavelength in the visible spectrum, typically between 520 to 560 nanometers.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Grey -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Grey">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color between white and black colors.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#HardXrayFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#HardXrayFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#XrayFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An X-Ray Freqeuncy of some Electromagnetic Wave, typically between 3 and 30 exahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hard X-ray Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Hardness -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Hardness">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the degree to which it can be turned, bowed, or twisted without breaking.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Hazel -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Hazel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is a combination of Brown and Green, typically associated with eye color.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hazel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Height -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Height">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A One Dimensional Extent that inheres in a bearer in virtue of the bearer&apos;s extension in a vertical direction.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#HighFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#HighFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 3 and 30 megahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#InfraredLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#InfraredLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Freqeuncy of some Electromagnetic Wave, typically between 300 gigahertz and 430 tetrahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Infrared</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infrared Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#IntrasonicFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#IntrasonicFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Sound Frequency that is below 20 hertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intrasonic Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Length -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Length">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A One Dimensional Extent that inheres in a bearer in virtue of the bearer&apos;s greatest extent in one direction.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Loudness -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Loudness">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundProcessProfile"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Sound Process Profile that is characterized by the amplitude, frequency and power of translated sound waves, typically on a continuum from soft to loud.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loudness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#LowFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#LowFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 30 and 300 kilohertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#LuminescentProperty -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#LuminescentProperty">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OpticalProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Optical Property that inheres in a bearer in virtue of that bearer&apos;s capacity to emit visible light, but which isn&apos;t the result of the bearer being heated.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Luminescence</ero:definition_source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are a variety of photometric measurements, such as luminous flux/power or luminous intensity, whose units are lumen and candela respectively, which attempt to describe properties associated with the perception of light. These are weighted measurements, typically by the luminosity function, as thus exist on the side of information content. It is a point of further development to add the needed intrinsic properties of radiation that such measurements are about.
+See: https:/en.wikipedia.org/wiki/Photometry_(optics)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luminescent Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Magenta -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Magenta">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color consisting of red and blue hues.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magenta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Maroon -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Maroon">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color consisting of purple and brown hue.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Mass -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Mass">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the amount of matter in that bearer.</ero:definition>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Matter&apos; here can also refer to the inertial energy of an object.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Typical unit of measure is the kilogram or pound.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MediumFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MediumFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 300 kilohertz and 3 megahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MicrowaveFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MicrowaveFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Frequency of some some Electromagnetic Wave, typically between 300 megahertz and 300 gigahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Microwave</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microwave Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MidInfraredLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MidInfraredLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#InfraredLightFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Infrared Light Freqeuncy of some Electromagnetic Wave, typically between 20 to 214 terahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Electromagnetic_spectrum#Infrared_radiation</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mid Infrared Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#NearInfraredLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#NearInfraredLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#InfraredLightFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Infrared Light Frequency of some Electromagnetic Wave, typically between 214 and 400 terahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Electromagnetic_spectrum#Infrared_radiation</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Near Infrared Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#NearUltravioletLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#NearUltravioletLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltravioletLightFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Ultraviolet Light Frequency of some Electromagnetic Wave, typically between 750 terahertz and 3 petahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ultraviolet</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Near Ultraviolet Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Oblong -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Oblong">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having an long thin shape with approximately parallel sides.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oblong</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SizeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Size Quality that inheres in a bearer in virtue of the bearer&apos;s extension in one dimension.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/PATO_0001708</ero:definition_source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subclasses of one dimensional extent are included for usability. It is doubtful any of them can be objectively distinguished (on the side of the bearing entity) without some reference to external properties such as orientation and perspective.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One Dimensional Extent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opacity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opacity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Property that inheres in a bearer in virtue of that bearer&apos;s capacity to transmit electromagnetic radiation of a given frequency through the bearer instead of reflecting, scattering, or absorbing electromangentic radiation of that frequency.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Opacity_(optics)</ero:definition_source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that it is important to specify the frequency of electromagnetic radiation when representing a bearer&apos;s Opacity since a bearer may be Opaque with respect to electromagnetic radiation of one frequency, but be transparent with respect to electromagnetic radiation of another frequency. Unless otherwise stated, statements about a bearer&apos;s Opacity are assumed to be about electromagnetic radiation with a frequency in the visible spectrum.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opaque -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opaque">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opacity"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Opacity that inheres in a bearer in virtue of that bearer&apos;s incapacity to transmit electromagnetic radiation of a given frequency through the bearer such that the bearer reflects, scatters, or absorbs all electromagnetic radiation of that frequency.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opaque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OpticalProperty -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OpticalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Property that is realized when its bearer interacts with electromagnetic waves within the visible light spectrum.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optical Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Orange -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Orange">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is between Red and Yellow with a wavelength in the visible spectrum typically between 590 to 635 nanometers.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Perimeter -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Perimeter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A One Dimensional Extent that inheres in a bearer in virtue of the extent of a boundary which encloses the bearer.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Phosphorescence -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Phosphorescence">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#LuminescentProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Luminescent Property that inheres in a bearer in virtue of that bearer&apos;s capacity to emit visible light after absorbing shorter wavelength radiation, and to continue emitting after the absorbing process has ceased.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Phosphorescence</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphorescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Pitch -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Pitch">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundProcessProfile"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Sound Process Profile that is characterized by the frequency of translated sound waves, typically on a continuum from low to high.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pitch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Protruding -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Protruding">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a part of an object in virtue of the part extending out above or beyond the surface of the object.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protruding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Purple -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Purple">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is aproximately midway between Red and Blue.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purple</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Pyramidal -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Pyramidal">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalShape"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Three Dimensional Shape that inheres in a bearer in virtue of it having a polygonal base with vertices that all connect to the same apex to form triangular faces.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pyramid_(geometry)</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationAbsorptivity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationAbsorptivity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Property that inheres in a bearer in virtue of the capacity of that bearer to absorb electromagnetic radiation of a given frequency.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation Absorptivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationEmissivity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationEmissivity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Property that inheres in a bearer in virtue of the capacity of that bearer to emit electromagnetic radiation of a given frequency.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation Emissivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationReflectivity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationReflectivity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationProperty"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Property that inheres in a bearer in virtue of the capacity of that bearer to scatter or reflect electromagnetic radiation of a given frequency.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation Reflectivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Freqeuncy of some Electromagnetic Wave, typically between 3 hertz and 300 gigahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Radio_wave</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radio Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radioactive -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radioactive">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of that bearer exhibiting or being caused by radioactivity.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioactive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiolucent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiolucent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiopacity"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypodense</ero:alternative_label>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transradiance</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radiopacity that inheres in a bearer in virtue of its capacity to permit most X-rays to pass through it.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiolucent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiopacity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiopacity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opacity"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiodensity</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Opacity that inheres in a bearer in virtue of its capacity to allow or prevent X-rays to pass through it.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Radiodensity</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiopacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiopaque -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiopaque">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Radiopacity"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiodense</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radiopacity that inheres in a bearer in virtue of its capacity to prevent most X-rays from passing through it.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiopaque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Rectangular -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Rectangular">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of having four sides and four 90 degree angles.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rectangular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Red -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Red">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is above Orange with a wavelength in the visible spectrum typically between 635 to 700 nanometers.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Refractivity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Refractivity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadiationReflectivity"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radiation Reflectivity that inheres in a bearer in virtue of the capacity of that bearer to change the direction of a propagating wave when passing through it.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Refractive_index#Refractivity</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refractivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Rosy -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Rosy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color consisting of red hue and yellow hue and high brightness.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Round -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Round">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circular</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality that inheres in a bearer in virtue of every point along its circumference being equidistant from the center.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.merriam-webster.com/dictionary/round</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Round</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Semicircular -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Semicircular">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape quality inhering in a bearer in virtue of the bearer having the shape of half a circle.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semicircular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Serrated -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Serrated">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having multiple sharp points along a edge.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serrated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the ratios between dimensions of external features of that bearer.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shape Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Sharp -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Sharp">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having a fine point or thin edge.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sharp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SilverColor -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SilverColor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that resembles Grey with the added feature of having a metallic shine.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silver Color</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SizeQuality -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SizeQuality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the bearer&apos;s extension in one or more dimensions.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Size Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Sloped -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Sloped">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having a horizontal border which is not level.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sloped</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoftXrayFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoftXrayFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#XrayFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An X-Ray Freqeuncy of some Electromagnetic Wave, typically between 30 petahertz and 3 exahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soft X-ray Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SonicFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SonicFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Sound Frequency that is in the range of 20 hertz to 20 kilohertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sonic Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Frequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Frequency that is characterized by the rate of oscillations per second of a sound wave.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sound Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundProcessProfile -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundProcessProfile">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sound Quality</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process Profile that is part of a sound reception process and is characterized by properties of incoming sound waves as they are translated by some sensory system.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.animations.physics.unsw.edu.au/waves-sound/quantifying/index.html</ero:definition_source>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sound#Perception_of_sound</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sound Process Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundWavelength -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundWavelength">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process Profile that is characterized by the distance a sound wave travels per cycle of that wave.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.physicsclassroom.com/Class/waves/u10l2b.cfm</ero:definition_source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing a non-dispersive media, wavelength will be the inverse of frequency.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sound Wavelength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Speed -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Speed">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process Profile that is characterized by an object&apos;s change in position during some time period.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Velocity</ero:definition_source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An object&apos;s speed is the scalar absolute value of it&apos;s velocity.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Spherical -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Spherical">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalShape"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Three Dimensional Shape inhering in a bearer in virtue of it having round cross sections.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spherical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Split -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Split">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having a linear opening, or having been divided into parts.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Square -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Square">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Rectangular"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Rectangular shape which has four equal length sides and four 90 degree angles.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Square</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Straight -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Straight">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer not having curves, bends, or angles along its borders.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Straight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Strength -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Strength">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Realizable Entity that is realized when its bearer exerts or resists some power, influence, or force.</ero:definition>
+        <ero:elucidation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strength is intended to be understood broadly here. Physical strength is only one type of Strength. Other subtypes of Strength may include military strength, psychological strength, emotional strength, political strength, technological strength, and so on.</ero:elucidation>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SuperHighFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SuperHighFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MicrowaveFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 3 and 30 gigahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Super High  Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SuperLowFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SuperLowFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 30 and 300 hertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Super Low Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SurfaceTension -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SurfaceTension">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Realizable Entity that inheres in a liquid and is realized when the cohesive forces of the molecules in the bearer at the surface are greater than the adhesive forces of the molecules in the surrounding air.</ero:definition>
+        <ero:definition_source>https://en.wikipedia.org/wiki/Surface_tension</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surface Tension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Temperature -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Temperature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of its thermal energy.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Texture -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Texture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the size, shape, and distribution of features on its surface, typically on a continuum from smooth to rough.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Texture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thickness -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thickness">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Depth"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Depth that inheres in a bearer in virtue of it extending inward through an object.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thickness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thin -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thin">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narrow</ero:alternative_label>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slender</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having a width or depth which is significantly smaller in proportion to its length or height.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalExtent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalExtent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SizeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Size Quality that inheres in a bearer in virtue of the bearer&apos;s extension in three dimensions.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Three Dimensional Extent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalShape -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ThreeDimensionalShape">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality that inheres only in a three dimensional entity.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Three Dimensional Shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Timbre -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Timbre">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundProcessProfile"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Sound Process Profile that is characterized by the variation, spectrum, or envelope of translated sound waves, typically on a continuum from dull or dark to bright.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timbre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Translucent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Translucent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opacity"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Opacity that inheres in a bearer in virtue of that bearer&apos;s capacity to transmit some but not all electromagnetic radiation of a given frequency through the bearer such that the bearer reflects, scatters, or absorbs some but not all electromagnetic radiation of that frequency.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Translucent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Transparent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Transparent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Opacity"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Opacity that inheres in a bearer in virtue of that bearer&apos;s capacity to transmit all or nearly all electromagnetic radiation of a given frequency through the bearer such that the bearer reflects, scatters, or absorbs little or no electromagnetic radiation of that frequency.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transparent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#TremendouslyHighFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#TremendouslyHighFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terahertz Radiation Frequency</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Freqeuncy of some Electromagnetic Wave, typically between 300 gigahertz and 3 terahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Terahertz_radiation</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tremendously High Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Triangular -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Triangular">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of it having three angles and three sides.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triangular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#TwoDimensionalExtent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#TwoDimensionalExtent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SizeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Area</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Size Quality that inheres in a bearer in virtue of the bearer&apos;s extension in two dimensions.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two Dimensional Extent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltraHighFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltraHighFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#MicrowaveFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 300 megahertz and 3 gigahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultra High Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltraLowFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltraLowFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 300 hertz and 3 kilohertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultra Low Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltrasonicFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltrasonicFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#SoundFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Sound Rrequency that is greater than 20 kilohertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultrasonic Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltravioletLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#UltravioletLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Freqeuncy of some Electromagnetic Wave, typically between 750 terahertz and 30 petahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ultraviolet</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultraviolet Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Vermilion -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Vermilion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color consisting of red and orange hue with a slight amount of gray.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vermilion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#VeryHighFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#VeryHighFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 30 and 300 megahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very High Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#VeryLowFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#VeryLowFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#RadioFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Radio Freqeuncy of some Electromagnetic Wave, typically between 3 and 30 kilohertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very Low Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Violet -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Violet">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is lower than Blue with a wavelength in the visible spectrum typically between 400 and 450 nanometers.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Violet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#VisibleLightFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#VisibleLightFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#VisibleLightFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Frequency of some Electromagnetic Wave, typically in the range of 400 to 800 terahertz.</ero:definition>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visible light overlaps with near infrared and near ultraviolet.</ero:definition_source>
+        <ero:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Light</ero:definition_source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visible Light Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Wavy -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Wavy">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Undulate</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of it having a sinuous or rippled border.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wavy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Weight -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Weight">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in some material entity with a mass in virtue of its location in some gravitational field.</ero:definition>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When an object is &quot;weighed&quot;, in the typical case, it is done so by taking into account the local force of gravity to determine the object&apos;s mass, whose standard of measure is the kilogram. The actual unit of measure of weight is the newton.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Wetness -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Wetness">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the degree to which the bearer is covered by a liquid, typically on a continuum of dry to wet.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wetness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#White -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#White">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color of maximum brightness, the color of objects that reflect nearly all wavelengths of the visible light spectrum, thus considered achromatic.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Wide -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Wide">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ShapeQuality"/>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broad</ero:alternative_label>
+        <ero:alternative_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fat</ero:alternative_label>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Shape Quality inhering in a bearer in virtue of the bearer having a width or depth which is significantly larger in proportion to its length or height.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#OneDimensionalExtent"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A One Dimensional Extent that inheres in a bearer in virtue of the bearer&apos;s extension in a horizontal direction.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Width</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#XrayFrequency -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#XrayFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#ElectromagneticRadiationFrequency"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Electromagnetic Radiation Freqeuncy of some Electromagnetic Wave, typically between 30 petahertz and 30 exahertz.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Yellow -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Yellow">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Color"/>
+        <ero:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Color that is between Orange and Green with a wavelength in the visible spectrum typically between 560 to 590 nanometers.</ero:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
