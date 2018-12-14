@@ -1,18 +1,23 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2017/11/sensorSensingOntology/"
      xml:base="http://www.semanticweb.org/lenovo/ontologies/2017/11/sensorSensingOntology/"
-     xmlns:ExtendedRelationOntology="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ExtendedRelationOntology="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/11/sensorSensingOntology">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
     </owl:Ontology>
     
 
@@ -36,31 +41,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001060 -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001060">
-        <rdfs:label xml:lang="fr">on platform</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001064 -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001064">
-        <rdfs:label xml:lang="en">produced by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001073 -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001073">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003"/>
-        <rdfs:label xml:lang="fr">observes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -72,13 +52,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
         <obo:IAO_0000115 xml:lang="en">A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
         <rdfs:label>system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/AgentOntology#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/AgentOntology#Agent">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
     </owl:Class>
     
 
@@ -106,7 +104,8 @@
     <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Sensor -->
 
     <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Sensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Transducer"/>
         <obo:IAO_0000115>A Transducer that is designed to detect events or changes in its environment, and then provide a corresponding output.</obo:IAO_0000115>
     </owl:Class>
     
@@ -116,7 +115,6 @@
 
     <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#SensorSystem">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
@@ -137,12 +135,28 @@
     
 
 
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Act -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Act">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity -->
 
     <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity">
         <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#InformationContentEntity"/>
         <obo:IAO_0000115>An Information Content Entity that consists of a set of propositions that describe some Entity.</obo:IAO_0000115>
         <rdfs:label>Descriptive Information Content Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#InformationContentEntity"/>
     </owl:Class>
     
 
@@ -160,15 +174,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003">
-        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Transducer"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001060"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001058"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <obo:IAO_0000115>A Transducer that is designed to detect events or changes in its environment, and then provide a corresponding output. It can be a sensor, a satellite, or a sensor system.</obo:IAO_0000115>
-        <rdfs:label xml:lang="fr">sensing system</rdfs:label>
+        <rdfs:label xml:lang="fr">active sensor</rdfs:label>
     </owl:Class>
     
 
@@ -176,19 +184,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001057 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001057">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
         <obo:IAO_0000115>A satellite is an object which has been sent into space in order to collect information or to be part of a communications system. Satellites move continually round the Earth or around another planet.</obo:IAO_0000115>
         <rdfs:label xml:lang="fr">satellite</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001058 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001058">
-        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Transducer"/>
-        <obo:IAO_0000115 xml:lang="en">An Entity to which other Entities can be attached - particuarly Sensors and other Platforms.  For example, a post might act as the Platform, a bouy might act as a Platform, or a fish might act as a Platform for an attached sensor.</obo:IAO_0000115>
-        <rdfs:label xml:lang="fr">platform</rdfs:label>
     </owl:Class>
     
 
@@ -196,14 +194,8 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001061 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001061">
-        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001064"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="fr">sensing system output</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:label xml:lang="fr">passive sensor</rdfs:label>
     </owl:Class>
     
 
@@ -211,13 +203,7 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001062 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001062">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001061"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001064"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Sensor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Output"/>
         <rdfs:label xml:lang="fr">sensor output</rdfs:label>
     </owl:Class>
     
@@ -226,13 +212,7 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001063 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001063">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001061"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001064"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001057"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Output"/>
         <rdfs:label xml:lang="fr">satellite output</rdfs:label>
     </owl:Class>
     
@@ -241,9 +221,9 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001065 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001065">
-        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Sensor"/>
-        <obo:IAO_0000115>A rain sensor or rain switch is a switching device activated by rainfall.</obo:IAO_0000115>
-        <rdfs:label xml:lang="fr">rain sensor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003"/>
+        <obo:IAO_0000115>A precipitation radar or rain switch is a switching device activated by rainfall.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">precipitation radar</rdfs:label>
     </owl:Class>
     
 
@@ -325,9 +305,135 @@
         <obo:IAO_0000115>A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over a set period of time.</obo:IAO_0000115>
         <rdfs:label xml:lang="fr">rain gauge</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Actuation -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Actuation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Act"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Observation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Act"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Platform -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Procedure -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Procedure">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Result -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Result">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sampling -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sampling">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Act"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Deployment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Deployment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Input -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Input">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Output -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Output">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Property">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Stimulus -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Stimulus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/System -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/System">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
