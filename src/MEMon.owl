@@ -1,18 +1,22 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2017/11/MEMOn/"
      xml:base="http://www.semanticweb.org/lenovo/ontologies/2017/11/MEMOn/"
+     xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ExtendedRelationOntology="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl1="http://geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:environmentalProcessOntology="http://www.semanticweb.org/lenovo/ontologies/2017/10/environmentalProcessOntology#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:ontologies="http://www.semanticweb.org/lenovo/ontologies/2017/10/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -299,6 +303,12 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000830">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#described_by"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001124"/>
             </owl:Restriction>
@@ -340,6 +350,19 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500002 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_02500002">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -406,14 +429,20 @@
 
     <!-- http://purl.oclc.org/NET/ssnx/ssn#Property -->
 
-    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Property">
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001080"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#MeasurementUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001102"/>
                 <owl:someValuesFrom rdf:resource="http://www.cubrc.org/ontologies/KDD/Mid/GeospatialOntology#EnvironmentalFeature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -492,27 +521,27 @@
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013 -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013">
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001016 -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001016">
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001016">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001083"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -649,25 +678,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001099 -->
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001096 -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001099">
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001096">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001077"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001003"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000710"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001097 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001097">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001100"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001103"/>
-                <owl:someValuesFrom rdf:resource="http://www.cubrc.org/ontologies/KDD/Mid/GeospatialOntology#EnvironmentalFeature"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001080"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/UnitsOfMeasureOntology#MeasurementUnitOfLength"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -752,6 +782,27 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001111">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
         <rdfs:label xml:lang="fr">Regosol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001138 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001138">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001097"/>
+        <ontologies:memon_00001080 rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/UnitsOfMeasureOntology#MillimeterMeasurementUnit"/>
+        <ontologies:memon_00001139 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001142"/>
+        <ontologies:memon_00001141 rdf:datatype="http://www.w3.org/2001/XMLSchema#date">20170521</ontologies:memon_00001141>
+        <rdfs:label xml:lang="fr">35 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001142 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001142">
+        <rdf:type rdf:resource="http://www.cubrc.org/ontologies/KDD/Mid/GeospatialOntology#Country"/>
+        <rdfs:label xml:lang="fr">Niamey</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1113,5 +1164,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
