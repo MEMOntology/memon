@@ -51,6 +51,22 @@
     
 
 
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
 
     <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
@@ -59,9 +75,34 @@
     
 
 
+    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#caused_by -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#caused_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#is_cause_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_process_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_process_part">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#is_cause_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#is_cause_of">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -711,8 +752,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000">
+        <owl:equivalentClass rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#NaturalProcess"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label>environmental system process</rdfs:label>
+        <rdfs:label>environmental process</rdfs:label>
     </owl:Class>
     
 
@@ -1052,6 +1094,436 @@
     
 
 
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Cause -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Cause">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#is_cause_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Change -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Change">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Process in which some independent continuant endures and 1) one or more of the dependent entities it bears increase or decrease in intensity, 2) the entity begins to bear some dependent entity or 3) the entity ceases to bear some dependent entity.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DamagedStasis -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DamagedStasis">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfDisposition -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfDisposition">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfFunction -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfGenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfGenericallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfQuality -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfQuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfRealizableEntity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfRealizableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfRole -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfSpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfSpecificallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#DecreaseOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Effect -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Effect">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#caused_by"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#EffectOfLocationChange -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#EffectOfLocationChange">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#EnhancedStasis -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#EnhancedStasis">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#FiatProcessPart -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#FiatProcessPart">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfDisposition -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfDisposition">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfFunction -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfGenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfGenericallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfQuality -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfQuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfRealizableEntity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfRealizableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfRole -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfSpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfSpecificallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#GainOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfDisposition -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfDisposition">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfFunction -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfGenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfGenericallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfQuality -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfQuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfRealizableEntity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfRealizableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfRole -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfSpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfSpecificallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#IncreaseOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfDisposition -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfDisposition">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfFunction -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfGenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfGenericallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfQuality -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfQuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfRealizableEntity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfRealizableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfRole -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfSpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfSpecificallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#LossOfDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#NaturalProcess -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#NaturalProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#NominalStasis -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#NominalStasis">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessAggregate -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessHistory -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessHistory">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessRecurrenceAggregate -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessRecurrenceAggregate">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#ProcessAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Stasis -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Stasis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfDisposition -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfDisposition">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfFunction -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfGenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfGenericallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Stasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfQuality -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfQuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfRealizableEntity -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfRealizableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfSpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfRole -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfRealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfSpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#StasisOfSpecificallyDependentContinuant">
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/EventOntology#Stasis"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001000">
@@ -1341,9 +1813,33 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001116"/>
         <rdfs:label xml:lang="en">heavy runoff</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001135 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001135">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001050"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#caused_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">vegetation degradation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001190 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001190">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001002"/>
+        <rdfs:label xml:lang="fr">cyclone process</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
