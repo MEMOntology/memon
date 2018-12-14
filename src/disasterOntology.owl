@@ -92,7 +92,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000689 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000689">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000677"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001018"/>
         <obo:IAO_0000115>a very high, large wave in the ocean that is usually caused by an earthquake under the sea and that can cause great destruction when it reaches land</obo:IAO_0000115>
         <rdfs:comment>A tsunami is the disposition of  an ocean or large lake during which a series of waves is generated in a water body, by the displacement of a large volume of water. Earthquakes, volcanic eruptions and other underwater explosions (including detonations of underwater nuclear devices), landslides, glacier calvings, meteorite impacts and other disturbances above or below water all have the potential to generate a tsunami.</rdfs:comment>
         <rdfs:label xml:lang="en">tsunami</rdfs:label>
@@ -308,7 +308,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02500012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500012">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001018"/>
         <obo:IAO_0000115>The removal of forest and undergrowth to, for example, increase the surface of arable land or to use the timber for construction or industrial purposes.</obo:IAO_0000115>
         <rdfs:label>deforestation</rdfs:label>
     </owl:Class>
@@ -327,49 +327,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000115>a sudden calamitous event bringing great damage, loss, or destruction.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.merriam-webster.com</obo:IAO_0000119>
-        <rdfs:label xml:lang="fr">disaster</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015"/>
-        <oboInOwl:hasExactSynonym>human made disaster</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A disastrous event caused directly and principally by one or more identifiable deliberate or negligent human actions. Also called human-made disaster. Compare with natural disaster.
-
- http://www.businessdictionary.com/</obo:IAO_0000115>
-        <rdfs:label xml:lang="fr">man made disaster</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001015">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000112>The earthquake was one of the worst natural disasters of this century.</obo:IAO_0000112>
         <obo:IAO_0000115>a sudden and terrible event in nature (such as a hurricane, tornado, or flood) that usually results in serious damage and many deaths.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.merriam-webster.com/</obo:IAO_0000119>
         <rdfs:label xml:lang="fr">natural disaster</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001016 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001016">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001014"/>
-        <obo:IAO_0000115 xml:lang="en">Fire is the disposition of an uncontrolled burning fire .Man-made fires are created or caused by people, rather than occurring naturally</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">man made fire</rdfs:label>
     </owl:Class>
     
 
@@ -545,9 +510,18 @@ A cold wave can be both a prolonged period of excessively cold weather and the s
         <obo:IAO_0000119 xml:lang="en">http://oceanservice.noaa.gov/facts/waterspout.html</obo:IAO_0000119>
         <rdfs:label xml:lang="fr">water spout</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001186 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001186">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2017/10/memon_00001026"/>
+        <rdfs:label xml:lang="fr">5-Category hurricane</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
